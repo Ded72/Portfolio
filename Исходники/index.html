@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Мое портфолио</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link href=' http://fonts.googleapis.com/css?family=Kurale ' rel='stylesheet'>
+        <link href=' https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic ' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a>Обо мне</a></li>
+                    <li><a>Портфолио</a></li>
+                    <li><a>Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Мое портфолио</h1>
+            </div>
+        </section>
+
+        <section class="me">
+            <div class="meTextImg">
+                <h1>ОБО МНЕ</h1>
+                <hr>
+
+                <p>
+                    <img src="images/я.jpg" id="Iam">
+                    Привет! Меня зовут Егор, я студент 4 курса Тюменского Индустриального Университета.
+                    Учусь на направлении "Прикладная математика и информатика". За время обучения я 
+                    изучил множество различных дисциплин, проходил практику в крупной компании,
+                    писал научно-исследовательские работы. Сейчас я активно изучаю направление
+                    информационной безопасности. В дальнейшем планирую работать в этой сфере.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h1>НАВЫКИ</h1>
+            <hr>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/kali.png">
+                    <p>
+                        Описание 1
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="images/сишарп.jpg">
+                    <p>
+                        Описание 2
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="images/html css.jpg">
+                    <p>
+                        Описание 3
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h1>ПОРТФОЛИО</h1>
+            <hr>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="images/Ашхабад.png" alt="Изображение 1">
+                </div>
+                <div class="slides fade">
+                    <img src="images/Практика.jpg" alt="Изображение 2">
+                </div>
+                <div class="slides fade">
+                    <img src="images/Сибур.jpg" alt="Изображение 3">
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+            <div style="text-align:center; margin: -40px auto;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            <script src="scripts/script.js"></script>
+        </section>
+    </body>
+</html>

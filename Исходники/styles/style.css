@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #14191B;
+}
+
+header {
+    position: absolute;
+    width: 70%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 0; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-radius: 15px; /* Закругление углов */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section hr {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.hero {
+    background-image: url("../images/Главная\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Высота экрана */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.me {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #1f2325;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#Iam {
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 40px;
+    float: left;
+    margin-right: 30px;
+}
+
+.meTextImg p{
+    display: flex; /* Используем Flexbox для центрирования */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    font-size: 20px;
+    height: calc(100vh - 100px);
+}
+
+.skills {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #1f2325;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.image-item {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.image-item img {
+    max-width: 200px; /* Ограничиваем максимальную ширину изображения */
+    height: 150px; /* Высота будет автоматически подстраиваться под ширину */
+    border-radius: 5px; /* Скругление углов изображения */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Добавляем тень к изображению */
+}
+
+.image-item p {
+    margin-top: 10px; /* Отступ сверху для текста */
+    font-size: 16px; /* Размер шрифта */
+    color: #ffffff; /* Цвет текста */
+}
+
+
+.image-gallery {
+    /*padding-top: 40px;  Отступ сверху */
+    display: flex; /* Используем флексбокс для выравнивания элементов в ряд */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+    gap: 40px; /* Отступ между элементами */
+    height: 100%; /* Высота контейнера для вертикального центрирования */
+}
+
+.portfolio {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #1f2325;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 680px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.slides{
+    display: none;
+}
+
+.portfolio img {
+    width: 600px; /* Ширина 100% для растягивания на весь контейнер */
+    height: 400px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Сохранение пропорций изображений */
+    border-radius: 10px; /* Закругленные углы изображений */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+
+
+
+
+/*.hero-content h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+
+.meTextImg h1 {
+    text-align: center;
+}
+
+.meTextImg hr {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.skills hr {
+    width: 250px;
+    display: block;
+    margin: auto;
+    
+}*/
