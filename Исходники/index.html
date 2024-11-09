@@ -6,18 +6,47 @@
         <link rel="stylesheet" href="styles/style.css">
         <link href=' http://fonts.googleapis.com/css?family=Kurale ' rel='stylesheet'>
         <link href=' https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic ' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
         
     </head>
     <body>
         <header>
             <nav>
+                <input id="burger-toggle" type="checkbox">
+                <label for="burger-toggle">
+                    <span></span>
+                </label>
                 <ul>
-                    <li><a>Обо мне</a></li>
-                    <li><a>Портфолио</a></li>
-                    <li><a>Контакты</a></li>
+                    <li><a href="#1">Обо мне</a></li>
+                    <li><a href="#2">Навыки</a></li>
+                    <li><a href="#3">Портфолио</a></li>
+                    <li><a href="#4">Контакты</a></li>
                 </ul>
             </nav>
         </header>
+
+        <div class="starfield">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
 
         <section class="hero">
             <div class="hero-content">
@@ -25,7 +54,7 @@
             </div>
         </section>
 
-        <section class="me">
+        <section id="1" class="me">
             <div class="meTextImg">
                 <h1>ОБО МНЕ</h1>
                 <hr>
@@ -41,32 +70,45 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="2" class="skills">
             <h1>НАВЫКИ</h1>
             <hr>
             <div class="image-gallery">
                 <div class="image-item">
                     <img src="images/kali.png">
                     <p>
-                        Описание 1
+                        Часто работаю в ОС Kali Linux,<br>
+                        что позволяет мне эффективно<br>
+                        тестировать системы на уязвимости<br>
+                        и развивать навыки в области<br>
+                        кибербезопасности и пентестинга. 
                     </p>
                 </div>
                 <div class="image-item">
                     <img src="images/сишарп.jpg">
                     <p>
-                        Описание 2
+                        Писал много различных программ <br>
+                        на C# в рамках учебных дисциплин, <br>
+                        от простых приложений до более <br>
+                        сложных проектов, таких как <br>
+                        системы управления данными и <br>
+                        графические интерфейсы, что <br>
+                        позволило мне глубже понять <br>
+                        объектно-ориентированное программирование.
                     </p>
                 </div>
                 <div class="image-item">
                     <img src="images/html css.jpg">
                     <p>
-                        Описание 3
+                        Активно изучаю веб-разработку, <br>
+                        осваивая современные технологии, <br>
+                        такие как HTML, CSS и JavaScript.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="3" class="portfolio">
             <h1>ПОРТФОЛИО</h1>
             <hr>
             <div class="slideshow-container">
@@ -74,10 +116,10 @@
                     <img src="images/Ашхабад.png" alt="Изображение 1">
                 </div>
                 <div class="slides fade">
-                    <img src="images/Практика.jpg" alt="Изображение 2">
+                    <img src="images/Практика.png" alt="Изображение 2">
                 </div>
                 <div class="slides fade">
-                    <img src="images/Сибур.jpg" alt="Изображение 3">
+                    <img src="images/Сибур.png" alt="Изображение 3">
                 </div>
         
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -91,7 +133,42 @@
                 <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
 
+            <!-- Кнопка для показа описания -->
+            <div class="button-container">
+                <button id="toggleDescription" onclick="toggleDescription()">Показать описание</button>
+            </div>
+        
+            <!-- Контейнер для описания -->
+            <div id="description" class="hidden" style=" margin-top: 20px; text-align: center;">
+                <p>
+                    <strong>OIOIUS-2024:</strong> Описание для Ашхабад.
+                </p>
+                <p>
+                    <strong>Практика в университете:</strong> Описание для Практика.
+                </p>
+                <p>
+                    <strong>Практика в компании "Сибур":</strong> Описание для Сибур.
+                    
+                </p>
+            </div>
+
             <script src="scripts/script.js"></script>
+        </section>
+
+        <section id="4" class="contact-info">
+            <div class="container">
+                <h2>Контактная информация</h2>
+                <p>г. Тюмень, Россия</p>
+                <a href="https://github.com/Ded72" class="social-button" target="_blank">
+                    <img src="images/GitHub.png" alt="GitHub" />
+                </a>
+                <a href="https://t.me/i1oven" class="social-button" target="_blank">
+                    <img src="images/ТГ.png" alt="GitHub" />
+                </a>
+                <a href="mailto:egorivanov6@gmail.com" class="social-button" target="_blank">
+                    <img src="images/gmail.png" alt="GitHub" />
+                </a>
+            </div>
         </section>
     </body>
 </html>
